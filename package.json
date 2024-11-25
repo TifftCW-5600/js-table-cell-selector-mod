@@ -4,8 +4,8 @@
   "description": "JS library allows you to select cells of HTML tables as well as cleaning, copying, cutting and pasting ",
   "main": "dist/tcs.bundle.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --mode production",
-    "prepare": "npm run build:component",
+    "build": "webpack --mode production",
+    "prepare": "npm run build",
     "dev": "./node_modules/.bin/webpack-dev-server --env=development --mode development",
     "lint": "eslint --ext .js .",
     "lintfix": "eslint --fix --ext .js .",
