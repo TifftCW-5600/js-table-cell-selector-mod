@@ -5,7 +5,8 @@
   "main": "dist/tcs.bundle.js",
   "scripts": {
     "build": "./node_modules/.bin/webpack --mode production",
-    "prepare": "npm run build",
+    "build:component": "rollup -c build/rollup.config.js",
+    "prepare": "npm run build:component",
     "dev": "./node_modules/.bin/webpack-dev-server --env=development --mode development",
     "lint": "eslint --ext .js .",
     "lintfix": "eslint --fix --ext .js .",
